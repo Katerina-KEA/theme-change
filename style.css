@@ -1,0 +1,43 @@
+.theme-light{
+    background-color: #fff;
+}
+
+.theme-dark{
+    background-color: #000;
+}
+
+input {
+    opacity: 0;
+    width: 0;
+}
+
+label {
+display: inline-block;
+width: 150px;
+height: 70px;
+border-radius: 40px;
+background-color: #000;
+position: relative;
+}
+
+.round {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+
+input:checked + label {
+    background-color: #fff;
+}
+
+input:checked + label .round {
+background-color: #000;
+left: 85px;
+
+}
+
